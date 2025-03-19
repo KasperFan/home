@@ -18,10 +18,10 @@
       </div>
       <!-- 移动端菜单按钮 -->
       <Icon
-        class="menu"
-        size="24"
-        v-show="!store.backgroundShow"
-        @click="store.mobileOpenState = !store.mobileOpenState"
+          class="menu"
+          size="24"
+          v-show="!store.backgroundShow"
+          @click="store.mobileOpenState = !store.mobileOpenState"
       >
         <component :is="store.mobileOpenState ? CloseSmall : HamburgerButton" />
       </Icon>
@@ -67,13 +67,13 @@ const loadComplete = () => {
 
 // 监听宽度变化
 watch(
-  () => store.innerWidth,
-  (value) => {
-    if (value < 721) {
-      store.boxOpenState = false;
-      store.setOpenState = false;
-    }
-  },
+    () => store.innerWidth,
+    (value) => {
+      if (value < 721) {
+        store.boxOpenState = false;
+        store.setOpenState = false;
+      }
+    },
 );
 
 onMounted(() => {
@@ -109,7 +109,7 @@ onMounted(() => {
   const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   const styleContent = "color: rgb(30,152,255);";
-  const title1 = "無名の主页";
+  const title1 = "如往一方界";
   const title2 = `
  _____ __  __  _______     ____     __
 |_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
